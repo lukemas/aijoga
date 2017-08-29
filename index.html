@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="Zapraszamy na zajęcia jogi do szkoły 'Ananta' na wrocławskich Krzykach." >
 <meta name="author" content="">
 <link rel="shortcut icon" href="style/images/favicon.png">
 <title>Szkoła Jogi "Ananta" we Wrocławiu</title>
@@ -84,23 +84,23 @@
     <div class="tp-fullscreen">
       <ul>
         <li data-transition="fade"> <img src="style/images/art/slider-bg1.jpg"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
-          <h1 class="tp-caption large sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
+          <h1 class="tp-caption large text-center sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
           
         </li>
          <li data-transition="fade"> <img src="style/images/art/slider-bg2.jpg"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
-          <h1 class="tp-caption large sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
+          <h1 class="tp-caption large text-center sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
           
         </li>
          <li data-transition="fade"> <img src="style/images/art/slider-bg3.jpg"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
-          <h1 class="tp-caption large sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
+          <h1 class="tp-caption large text-center sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
           
         </li>
          <li data-transition="fade"> <img src="style/images/art/slider-bg4.jpg"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
-          <h1 class="tp-caption large sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
+          <h1 class="tp-caption large text-center sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
           
         </li>
          <li data-transition="fade"> <img src="style/images/art/slider-bg5.jpg"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
-          <h1 class="tp-caption large sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
+          <h1 class="tp-caption large text-center sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut">Szkoła Jogi "Ananta" <br/> we Wrocławiu</h1>
           
         </li>
 
@@ -130,6 +130,8 @@
 <p><b>27-29.10.2017</b> - Jesienne warsztaty dla osób na każdym poziomie zaawansowania w Kamieńczyku <button id="btnModal2" style="border-radius:3px;"class="btn btn-info btn-sm"> dowiedz się więcej</button></p>
 
 <p><b>09-12.11.2017</b> - Warsztaty dla zaawansowanych <button id="btnModal3" style="border-radius:3px;"class="btn btn-info btn-sm">dowiedz się więcej</button></p>
+
+<p><b>27.12.2017-01.01.2018</b> - Sylwester z jogą <button id="btnModal5" style="border-radius:3px;"class="btn btn-info btn-sm">dowiedz się więcej</button></p>
 
 </div>
 </div>
@@ -595,6 +597,15 @@ $.post('warszt3.html', function(xx) {
 $(document).ready(function(e) {
   $('#btnModal4').click(function(){
 $.post('warszt4.html', function(xx) { 
+ $('#tmpModal').html(xx)
+ $('#testModal').modal('show');
+
+})
+  })
+});
+$(document).ready(function(e) {
+  $('#btnModal5').click(function(){
+$.post('warszt5.html', function(xx) { 
  $('#tmpModal').html(xx)
  $('#testModal').modal('show');
 
